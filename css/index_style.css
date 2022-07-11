@@ -1,0 +1,414 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+/* regla para usar una font descargada a la pc */
+@font-face {
+	font-family: 'Allison';
+	src: url('../assets/font/Allison-Regular.ttf');
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url('../assets/font/Montserrat-Regular.ttf');
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+html {
+    background-color: black;
+    font-size: 62.5%;
+    color: white;
+}
+
+nav {
+   grid-area: header;
+}
+footer {
+   grid-area: footer;
+}
+main {
+   grid-area: principal;     
+}
+
+/* Responsive design. */
+@media all and (min-width: 0px)  {
+    
+    #grilla {
+   display: grid;
+   grid-template-areas:
+     "nav nav nav"
+     "principal principal principal"
+     "footer footer footer";
+   grid-template-rows: 100px 1fr 300px; 
+   grid-template-columns: 100%;
+}
+    .presentacion__seccion--llegada {
+          flex-direction: column;
+    }
+    
+    .presentacion__seccion--producto li {
+              flex-direction: column;
+          }
+    .presentacion__seccion_titular p{
+    display: inline-block;
+    font-size: 4rem;
+    padding: 10rem 14rem 1rem 0rem;
+    line-height: 4rem;
+    }
+        .presentacion__seccion--producto {
+            display: inline-block;
+            justify-content: space-evenly;
+            font-size: 2rem;
+            font-weight: 400;
+            line-height: 37px;
+            align-items: center;
+            text-align: center;
+            padding: 2px 1rem;
+            margin: 0rem 6rem;
+    }
+
+
+    .presentacion__seccion--producto li{
+        display: flex;
+        padding: 1rem;
+        margin: 3rem;
+    }
+
+    .presentacion__seccion--producto li div {
+        height: auto;
+        width: 80%;
+        padding: 2rem 5rem;
+    }
+
+    .presentacion__seccion--producto li div h2 {
+        font-size: 3rem;
+        text-align: left;
+    }
+
+    .presentacion__seccion--producto li div p {
+        font-size: 2rem;
+        text-align: left;
+        line-height: 3rem;
+        vertical-align: baseline;
+        bottom: 0;
+    }
+    
+        .presentacion__seccion--subtitulo {
+        position: relative;
+        text-align: center;
+        font-family: 'Allison';
+        font-style: normal;
+        font-size: 10rem;
+        font-weight: 400;
+        line-height: 9rem;
+        z-index: 30000;
+        padding: -10000rem 0rem 3rem 0rem;
+    }
+    .presentacion__seccion__inscripcion {
+    display: inline-block;
+    padding: 0rem 2rem;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.presentacion__seccion__inscripcion p {
+    font-family: 'Montserrat';
+    text-align: center;
+    font-style: normal;
+    line-height: 4rem;
+    font-size: 2rem;
+    padding-bottom: 2rem;
+}
+}
+@media all and (min-width: 768px) {
+  /* MAIN SECTIONS */
+    
+    #grilla {
+   display: grid;
+   grid-template-areas:
+     "nav nav nav"
+     "principal principal principal"
+     "footer footer footer";
+   grid-template-rows: 100px 1fr 300px; 
+   grid-template-columns: 100%;
+}
+    
+section {
+	width: 80%;
+	height: auto;
+	padding: 10px 50px;
+	margin: 10px auto;
+    font-family: 'Montserrat';
+    font-style: normal;
+    scroll-snap-align: start;
+}
+
+.presentacion__seccion--llegada {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem;
+    padding: 0rem;
+}
+
+.presentacion__seccion_titular p{
+    display: inline-block;
+    font-size: 2rem;
+    padding: 1rem 14rem 1rem 0rem;
+    line-height: 4rem;
+}
+
+.presentacion__seccion_titular h1{
+    position: relative;
+    text-align: center;
+    font-family: 'Allison';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15rem;
+    line-height: 9rem;
+    z-index: 30000;
+    padding: 3rem 0rem 3rem 0rem;
+}
+
+.titular__brown {
+    color: #A9927D;
+}
+
+.presentacion__seccion--llegada img{
+    max-width: 70%;
+    height: auto;
+    z-index: -100000;
+}
+
+.presentacion__seccion--uso {
+    display: inline-block;
+}
+
+.presentacion__seccion--uso p{
+    font-size: 2rem;
+    line-height: 4rem;
+    text-align: center;
+}
+
+.presentacion__seccion--subtitulo {
+    position: relative;
+    text-align: center;
+    font-family: 'Allison';
+    font-style: normal;
+    font-size: 10rem;
+    font-weight: 400;
+    line-height: 9rem;
+    z-index: 30000;
+    padding: -10000rem 0rem 3rem 0rem;
+}
+
+.presentacion__seccion--producto {
+        display: inline-block;
+        justify-content: space-evenly;
+        font-size: 2rem;
+        font-weight: 400;
+        line-height: 37px;
+        align-items: center;
+        text-align: center;
+        padding: 2px 1rem;
+        margin: 0rem 6rem;
+}
+
+
+.presentacion__seccion--producto li{
+    display: flex;
+    padding: 1rem;
+    margin: 3rem;
+    flex-direction: row;
+}
+
+.presentacion__seccion--producto li div {
+    height: auto;
+    width: 80%;
+    padding: 2rem 5rem;
+}
+
+.presentacion__seccion--producto li div h2 {
+    font-size: 3rem;
+    text-align: left;
+}
+
+.presentacion__seccion--producto li div p {
+    font-size: 2rem;
+    text-align: left;
+    line-height: 3rem;
+    vertical-align: baseline;
+    bottom: 0;
+}
+
+
+/* FOOTER */
+
+.pie {
+	text-align: center;
+	width: 80%;
+	height: auto;
+	padding: 10px 50px;
+	margin: 10px auto;
+    justify-content: center;
+}
+
+.pie__titulo--mediano {
+    font-family: 'Allison';
+    font-style: normal;
+    line-height: 8rem;
+    font-size: 10rem;
+    padding-bottom: 1rem;
+    padding-bottom: 2rem;
+}
+
+.pie__CC {
+    font-family: 'Montserrat';
+    font-style: normal;
+    line-height: 4rem;
+    font-size: 2rem;
+    padding-bottom: 2rem;
+    justify-content: space-around;
+}
+
+.pie__CC p:hover {
+    color: #A9927D;
+}
+}
+
+
+
+article {
+  scroll-snap-type: y proximity;
+  /* Reserve space for header plus some extra space for sneak peeking. */
+  scroll-padding-top: 1vh;
+  overflow-y: scroll;
+}
+
+/* body */
+/* HEADER */
+header {
+    position: relative;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-style: normal;
+    text-decoration: none;
+}
+
+    .navegacion__cajas {
+        width: 90%;
+        padding-top: 32px;
+        margin: 10px;
+        height: auto;
+        display: inline-flex;
+        justify-content: space-between;
+        padding-right: 2rem;
+        align-items: center;
+    }
+
+    nav p{
+        font-size: 3rem;
+        padding-left: 2rem;
+    }
+
+    nav ul {
+        width: auto;
+        display: inline-block;
+        list-style: none;
+        }
+
+    .estiloLista{
+        display: inline-flex;
+        justify-content: space-evenly;
+        font-size: 2rem;
+        font-weight: 400;
+        line-height: 37px;
+        align-items: center;
+        text-align: center;
+        padding: 10px 1rem;
+        margin: 0rem 6rem;
+    }
+
+    .estiloLista li {
+        padding: 2rem;
+    }
+        #boton__juega:hover:after {content: " 🥳"}
+        #boton__descubre:hover:after {content: " 🐣"}
+        #boton__testea:hover:after {content: " 🐥"}
+        #boton__comparte:hover:after {content: " 🐸"}
+
+/* MAIN SECTIONS */
+section {
+	width: 80%;
+	height: auto;
+	padding: 10px 50px;
+	margin: 10px auto;
+    font-family: 'Montserrat';
+    font-style: normal;
+    scroll-snap-align: start;
+}
+
+.presentacion__seccion--llegada {
+    display: flex;
+    justify-content: space-between;
+    margin: 0rem;
+    padding: 10rem 0rem;
+}
+
+
+.presentacion__seccion_titular h1{
+    position: relative;
+    text-align: left;
+    font-family: 'Allison';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15rem;
+    line-height: 9rem;
+    z-index: 30000;
+    padding: 3rem 0rem 3rem 0rem;
+}
+
+.titular__brown {
+    color: #A9927D;
+}
+
+.presentacion__seccion--llegada img{
+    max-width: 70%;
+    height: auto;
+    z-index: -100000;
+}
+/* FOOTER */
+
+.pie {
+	text-align: center;
+	height: auto;
+	margin: 10px auto;
+    justify-content: center;
+}
+
+.pie__titulo--mediano {
+    font-family: 'Allison';
+    font-style: normal;
+    line-height: 8rem;
+    font-size: 10rem;
+    padding-bottom: 1rem;
+    padding-bottom: 2rem;
+}
+
+.pie__CC {
+    font-family: 'Montserrat';
+    font-style: normal;
+    line-height: 4rem;
+    font-size: 2rem;
+    padding-bottom: 2rem;
+    justify-content: space-around;
+}
+
+.pie__CC p:hover {
+    color: #A9927D;
+}
+
