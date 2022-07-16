@@ -5,7 +5,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="shortcut icon" href="img/favicon.png">
 	<link rel="stylesheet" href="css/index_style.css">
-    <link rel="stylesheet" href="css/animate.css">
 	<title>Quién es xelsoiBot</title>
 </head>
 <body id="grilla">
@@ -27,6 +26,7 @@
                     <h1><span class="titular__brown">Y tú,</span><br> ¿te leíste el libro?</h1>
                    <p><strong>Únete a @xelsoi</strong> en esta nueva experiencia virtual. Conversa, juega y conoce más de tu booktoker favorito <strong>a solo una frase de distancia</strong></p>
                </div>
+               <button onclick="myFunction()" class="presentacion__modoOscuro">Dark mood ☠️</button>
 			</article>
 		</section>
 		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -41,8 +41,7 @@
                     <span class="titular__brown">Ya lo sigues</span>, ahora solo háblale 
                 </h1>
 				<p>Solo di <em>"Hey Google, hablar con xelsoiBot"</em></p>
-				<img src="img/appstore.png" alt="">
-				<ul class="presentacion__seccion--producto">
+				<ul class="presentacion__seccion--producto wow fadeInLeft">
                     <li>
                         <img src="http://via.placeholder.com/360x600" alt="placeholder">
                         <div>
@@ -88,4 +87,11 @@
           <p>© 2022 <a href="https://www.linkedin.com/in/franciscajavieravargas/">Francisca Vargas, <i>Diseñadora UX</i></a></p>
         </div>
     </footer>
+    <script>
+        function myFunction() {
+           var element = document.body;
+           element.classList.toggle("dark-mode");
+        }
+    </script>
 </body>
+</html>
