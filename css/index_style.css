@@ -19,10 +19,58 @@ a {
 }
 
 html {
-    background-color: black;
     font-size: 62.5%;
     color: white;
+    background: rgb(109,106,124);
+    background: linear-gradient(209deg, rgba(109,106,124,1) 12%, rgba(158,158,155,1) 52%, rgba(172,150,40,1) 100%);
 }
+
+.dark-mode {
+    background-color: black;
+    color: white;
+  }
+
+.presentacion__modoOscuro {
+    display: inline-block;
+  background-color: #aa9737;
+  border: 1px solid transparent;
+  border-radius: .75rem;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  flex: 0 0 auto;
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+  padding: .75rem 1.2rem;
+  text-align: center;
+  text-decoration: none #6B7280 solid;
+  text-decoration-thickness: auto;
+  transition-duration: .2s;
+  transition-property: background-color,border-color,color,fill,stroke;
+  transition-timing-function: cubic-bezier(.4, 0, 0.2, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 20%;
+}
+
+.presentacion__modoOscuro:hover {
+  background-color: #111827;
+}
+
+.presentacion__modoOscuro:focus {
+  box-shadow: none;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+@media (min-width: 768px) {
+  .presentacion__modoOscuro {
+    padding: .75rem 1.5rem;
+  }
+}
+
 
 nav {
    grid-area: header;
@@ -381,6 +429,8 @@ section {
     height: auto;
     z-index: -100000;
 }
+
+
 /* FOOTER */
 
 .pie {
