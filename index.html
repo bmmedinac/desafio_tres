@@ -5,21 +5,39 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="shortcut icon" href="img/favicon.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
 	<title>Quién es xelsoiBot</title>
 </head>
-<body id="grilla">
+<body>
+    <!-- Nav bootstrap -->
     <header>
-        <nav class="navegacion__cajas">
-            <p><a href="index.html">Hola, <strong>xelsoiBot</strong></a></p>
-            <ul class="estiloLista">
-                <li id="boton__juega"><a href="pages/que-puede-hacer.html">Juega</a></li>
-                <li id="boton__descubre"><a href="pages/como-se-creo.html">Descubre</a></li>
-                <li id="boton__testea"><a href="pages/vuelvete-un-chicken-tester.html">Testea</a></li>
-                <li id="boton__comparte"><a href="pages/que-se-viene.html">Comparte</a></li>
-            </ul>
-        </nav>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">Hola, <strong>xelsoiBot</strong></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 estiloLista">
+                  <li class="nav-item">
+                    <a id="boton__juega" class="nav-link active" aria-current="page" href="pages/que-puede-hacer.html">Juega</a>
+                  </li>
+                  <li class="nav-item">
+                    <a id="boton__descubre" class="nav-link active" href="pages/como-se-creo.html">Descubre</a>
+                  </li>
+                  <li class="nav-item">
+                    <a id="boton__testea" class="nav-link active" href="pages/vuelvete-un-chicken-tester.html">Testea</a>
+                  </li>
+                  <li class="nav-item">
+                    <a id="boton__comparte" class="nav-link active" href="pages/que-se-viene.html">Comparte</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
     </header>
-    <main>
+    <main class="col-sm-8 col-md-12 col-lg-12">
         <section>
 			<article class="presentacion__seccion--llegada">
                <div class="presentacion__seccion_titular">
@@ -43,14 +61,14 @@
 				<p>Solo di <em>"Hey Google, hablar con xelsoiBot"</em></p>
 				<ul class="presentacion__seccion--producto wow fadeInLeft">
                     <li>
-                        <img src="http://via.placeholder.com/360x600" alt="placeholder">
+                        <img src="http://via.placeholder.com/360x600" alt="placeholder" width="auto">
                         <div>
                             <h2><em>No te leíste el libro, <span class="titular__brown">todas las veces que quieras</span></em></h2>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur lacinia malesuada lorem, sed finibus sapien vulputate at. Phasellus nulla lectus, dignissim eu tristique non, imperdiet pharetra enim. Suspendisse potenti. Etiam.</p>
                         </div>
                     </li>
                     <li>
-                       <img src="http://via.placeholder.com/360x600" alt="placeholder">
+                       <img src="http://via.placeholder.com/360x600" alt="placeholder" width="auto">
                         <div>
                             <h2><em>Conoce más sobre <span class="titular__brown">@xelsoi y su gatita Susi</span></em></h2>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur lacinia malesuada lorem, sed finibus sapien vulputate at. Phasellus nulla lectus, dignissim eu tristique non, imperdiet pharetra enim. Suspendisse potenti. Etiam.</p>
@@ -69,7 +87,7 @@
 			<article class="presentacion__seccion__inscripcion">
                 <h1 class="presentacion__seccion--subtitulo">Conversen <span class="titular__brown">en persona</span></h1>
 				<p>Revisa e inscríbete en sus próximos talleres con pocos pasos</p>
-				<iframe src="https://calendar.google.com/calendar/embed?src=6dc9taqpgutlqs4au8r7p6716o%40group.calendar.google.com&ctz=America%2FSantiago" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+				<iframe src="https://calendar.google.com/calendar/embed?src=6dc9taqpgutlqs4au8r7p6716o%40group.calendar.google.com&ctz=America%2FSantiago" style="border: 0" width="auto" height="600" frameborder="0" scrolling="no"></iframe>
 			</article>
 		</section>
 		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -90,7 +108,9 @@
     <script>
         function myFunction() {
            var element = document.body;
+           var element_nav = document.nav;
            element.classList.toggle("dark-mode");
+           element_nav.classList.toggle("dark-mode");
         }
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
